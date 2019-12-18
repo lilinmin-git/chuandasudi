@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>穿搭速递</title>
+        <style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			#container{
+				width:100%;
+				background: #fff9ed;
+				margin:auto;
+			}
+			#header{
+				width:100%;
+				height:128px;
+				background: url(images/head_bg.jpg) repeat-x;
+				margin:auto;
+				border-bottom:3px solid #d5d5d5;
+			}
+		
+			#banner{
+				width:980px;
+				height:373px;
+				background: url(images/banner.jpg) no-repeat;
+				margin:auto;
+			}
+			#jpzs{
+				width:980px;
+				height:330px;
+				background: #EC6E47;
+				margin:auto;
+				padding-top:10px;
+				padding-bottom:5px;
+			}
+			#clqy{
+				width:980px;
+				height:404px;
+				margin:auto;
+				margin-top:80px;
+				margin-bottom:65px;
+			}
+			#footer{
+				width:100%;
+				height:100px;
+				background:#000;
+				margin:auto;
+				line-height:26px;
+				color:#fff;
+				text-align:center;
+				padding-top:55px;
+				margin-top:65px;
+			}
+			#header ul{
+				width:980px;
+				list-style-type:none;/*none去掉项目符号*/
+				margin:auto;
+			}
+			#header ul li{
+				float:left;/*li横向放置*/
+			}
+			#header ul li:first-child{/*选择第一个li*/
+				width:178px;	/*将li的宽度和高度设置为与背景图片一样大，可以完整显示背景图片*/
+				height:118px;
+				background:url(images/logo.png) no-repeat;
+			}
+			#header ul li a{
+				display:block;
+				height:91px;
+				width:119px;
+				text-align:center;/*文本水平居中*/
+				line-height:91px;/*文本垂直居中*/
+				text-decoration:none;/*去掉下划线*/
+				color:#FFF;
+			}
+			#header ul li a:hover{/*鼠标经过，悬停时超链接的状态*/
+				background:url(images/xuanfu.png) no-repeat; 
+			}
+			#sub_jpzs{
+				width:910px;
+				height:322px;
+				background:#FFF;
+				margin:auto;
+				padding-top:8px;/*将dl下移8px，由于增加*/
+			}
+			dl.left{
+				width:280px;
+				height:316px;
+				margin-left:10px;
+				float:left;
+			}
+			dl.center{
+				width:280px;
+				height:316px;
+				margin-left:5px;
+				float:left;
+				
+			}
+			dl.right{
+				width:325px;
+				height:316px;
+				float:left;
+				margin-left:3px;
+			}
+			dl.left dt.left_1{
+				width:162px;
+				height:169px;
+				background:url(images/pic01.jpg) no-repeat;
+				float:left;
+				margin-bottom:10px;
+			}
+			dl.left dd.left_1{
+				width:118px;
+				height:169px;
+				background:#333;
+				float:left;
+				color:#FFF;
+				text-align:center;
+				line-height:169px;
+			}
+			dl.left dt.left_2{
+				width:162px;
+				height:137px;
+				background:url(images/pic02.jpg) no-repeat;
+				float:left;
+			}
+			dl.left dd.left_2{
+				width:118px;
+				height:137px;
+				background:#333;
+				float:left;
+				color:#FFF;
+				text-align:center;
+				line-height:143px;
+			}
+			dl.center dt.center_1{
+				width:162px;
+				height:117px;
+				background:url(images/pic03.jpg) no-repeat;
+				float:left;
+				margin-bottom:10px;
+			}
+			dl.center dd.center_1{
+				width:118px;
+				height:117px;
+				background:#333;
+				text-align:center;
+				line-height:117px;
+				color:#FFF;
+				float:left;
+			}
+			dl.center dt.center_2{
+				width:162px;
+				height:188px;
+				background:url(images/pic04.jpg) no-repeat;
+				float:left;
+			}
+			dl.center dd.center_2{
+				width:118px;
+				height:188px;
+				background:#333;
+				text-align:center;
+				line-height:188px;
+				color:#FFF;
+				float:left;
+			}
+			dl.right dt.right_1{
+				width:205px;
+				height:314px;
+				background: url(images/pic05.jpg) no-repeat;
+				float:left;
+			}
+			dl.right dd.right_1{
+				width:120px;
+				height:314px;
+				background:#333;
+				text-align:center;
+				line-height:314px;
+				color:#fff;
+				float:left;
+			}
+			#clqy h2{
+				width:254px;
+				height:50px;
+				background:#ea6c46;
+				font-size:16px;
+				line-height:50px;
+				text-align:center;
+				color:#fff;
+				font-weight:normal;
+			}
+			#clqy div{
+				width:958px;
+				height:337px;
+				border:1px solid #ccc;
+				padding:15px 0 0 20px;
+			}
+			#clqy dl{
+				width:229px;
+				height:330px;
+				border:1px solid #ccc;
+				float:left;
+				margin-left:5px;
+			}
+			dl.one dd.one_1{
+				width:229px;
+				height:66px;
+				background:#fff;
+				line-height:66px;
+				color:#7a7a7a;
+				font-size:20px;
+				text-align:center;
+			}
+			dl.two dd.two_1{
+				width:229px;
+				height:66px;
+				background:#fff;
+				line-height:66px;
+				color:#7a7a7a;
+				font-size:20px;
+				text-align:center;
+			}
+			dl.three dd.three_1{
+				width:229px;
+				height:66px;
+				background:#fff;
+				line-height:66px;
+				color:#7a7a7a;
+				font-size:20px;
+				text-align:center;
+			}
+			dl.four dd.four_1{
+				width:229px;
+				height:66px;
+				background:#fff;
+				line-height:66px;
+				color:#7a7a7a;
+				font-size:20px;
+				text-align:center;
+			}
+			#clqy dl dt{
+				border-bottom:1px solid #dcd2da;
+			}
+			#clqy dl dd a{
+				width:200px;
+				height:38px;
+				background:#f3734e url(images/gouwu.jpg) no-repeat;;
+				text-align:center;
+				line-height:38px;
+				display:block;
+				margin:auto;
+				text-decoration:none;
+				color:#CCC;
+				text-indent:13px;
+			}
+        </style>
+    </head>
+    
+    <body>
+    	<div id="container">
+        	<div id="header">
+            	<ul >
+                	<li></li>
+                    <li><a href="#">穿搭速递</a></li>
+                    <li><a href="#">时尚大片</a></li>
+                    <li><a href="#">星着装</a></li>
+                    <li><a href="#">时尚圈</a></li>
+                    <li><a href="#">时尚专栏</a></li>
+                    <li><a href="#">会员/登陆</a></li>
+               </ul>
+            </div>
+            
+            <div id="banner">
+            </div>
+            
+            <div id="jpzs">
+                <div id="sub_jpzs">
+                    <dl class="left">
+                    	<dt class="left_1"></dt>
+                        <dd class="left_1">明星风尚</dd>
+                        <dt class="left_2"></dt>
+                        <dd class="left_2">时尚博主</dd>
+                    </dl>
+                    <dl class="center">
+                    	<dt class="center_1"></dt>
+                        <dd class="center_1">流行搭配</dd>
+                        <dt class="center_2"></dt>
+                        <dd class="center_2">精选秀场</dd>
+                    </dl>
+                    <dl class="right">
+                    	<dt class="right_1"></dt>
+                        <dd class="right_1">环球街拍</dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <div id="clqy">
+            	<h2>潮流前沿 / Tidal current</h2>
+            	<div>
+                	<dl class="one">
+                        <dt class="one_1"><img src="images/match01.jpg" /></dt>
+                        <dd class="one_1">潮流饰品</dd>
+                        <dd class="one_2"><a href="#">快速购买通道</a></dd>
+                    </dl>
+                   	<dl class="two">
+                        <dt class="two_1"><img src="images/match02.jpg" /></dt>
+                        <dd class="two_1">时尚女鞋</dd>
+                        <dd class="two_2"><a href="#">快速购买通道</a></dd>
+                     </dl>
+                     <dl class="three">
+                        <dt class="three_1"><img src="images/match03.jpg" /></dt>
+                        <dd class="three_1">精品包包</dd>
+                        <dd class="three_2"><a href="#">快速购买通道</a></dd>
+                     </dl>
+                     <dl class="four">
+                        <dt class="four_1"><img src="images/match04.jpg" /></dt>
+                        <dd class="four_1">百搭衣帽</dd>
+                        <dd class="four_2"><a href="#">快速购买通道</a></dd>
+                     </dl>
+                </div>
+            </div>
+            
+            <div id="footer">
+            	<P>Copyright ? 2006-2016 CHAOLIUFUSHIcom, All rights reserved.</P>
+				<p>2001-2018，版权所有 潮流服饰 85CP备13385453</p>
+            </div>
+        </div>
+    </body>
+</html>
